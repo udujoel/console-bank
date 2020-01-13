@@ -46,10 +46,16 @@ namespace console_bank
                     functions.Message("Here is your Details:",ConsoleColor.DarkYellow);
 
                     Console.WriteLine();
-                    Console.WriteLine(@$"   FirstName: {currentUser.firstName}, LastName: {currentUser.lastName}
-Date of Birth: {currentUser.dateOfBirth}, Address: {currentUser.address}");
+                    Console.WriteLine(@$"               FirstName: {currentUser.firstName},     LastName: {currentUser.lastName}
+                Date of Birth: {currentUser.dateOfBirth},       Address: {currentUser.address}");
                     Console.WriteLine();
-                    functions.Message("Create My Account -(Y/N)",ConsoleColor.Red);
+                    functions.Message("Create My Account? -(Y/N)",ConsoleColor.Red);
+                    response = Console.ReadLine();
+
+                    if (response.ToUpper()=="Y")
+                    {
+                        functions.Message($"Account Created Successfully. Your Account Number is[ {currentUser.accountNumber[numberOfAccounts] } ]",ConsoleColor.Green);
+                    }
                 }
             }
         }

@@ -32,5 +32,13 @@ namespace console_bank
         {
             Console.SetCursorPosition((Console.WindowWidth - textToDisplay.Length) / 2, Console.CursorTop);
         }
+
+        public static void Menu()
+        {
+            Console.WriteLine();
+            Message("Choose an Operation:  (0-5):",ConsoleColor.White);
+            Console.SetCursorPosition(5,Console.CursorTop);
+            Console.WriteLine("\t");
+        }
     }
 }
