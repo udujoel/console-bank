@@ -17,8 +17,15 @@ namespace console_bank
             Console.WriteLine();
 
             Message(dots,ConsoleColor.Green);
-            Console.WriteLine();
-        }
+
+
+            Console.WriteLine("                                  +---------------------------------------------------+");
+            Console.WriteLine("                                  |                                                   |");
+            Console.WriteLine("                                  |               1.  Login.                          |");
+            Console.WriteLine("                                  |               2.  Register.                       |");
+            Console.WriteLine("                                  |                                                   |");
+            Console.WriteLine("                                  +---------------------------------------------------+");
+            }
 
         public static void Message(string msg, ConsoleColor color)
         {
@@ -36,9 +43,41 @@ namespace console_bank
         public static void Menu()
         {
             Console.WriteLine();
-            Message("Choose an Operation:  (0-5):",ConsoleColor.White);
-            Console.SetCursorPosition(5,Console.CursorTop);
-            Console.WriteLine("\t");
+            //Console.SetCursorPosition(5,Console.CursorTop);
+            Console.WriteLine("                                  +---------------------------------------------------+");
+            Console.WriteLine("                                  |                                                   |");
+            Console.WriteLine("                                  |               1.  Create Another Account          |");
+            Console.WriteLine("                                  |               2.  Check Account Balance           |");
+            Console.WriteLine("                                  |               3.  Deposite Funds                  |");
+            Console.WriteLine("                                  |               4.  Withdraw Funds                  |");
+            Console.WriteLine("                                  |               5.  Transfer Funds                  |");
+            Console.WriteLine("                                  |               6.  View Account Statement          |");
+            Console.WriteLine("                                  |               7.  Logout                          |");
+            Console.WriteLine("                                  |                                                   |");
+            Console.WriteLine("                                  +---------------------------------------------------+");
+            Console.WriteLine();
+            Message("+----------------------------+",ConsoleColor.DarkMagenta);
+            Message("|Choose an Operation:  (1-7):|",ConsoleColor.DarkMagenta);
+            Message("+----------------------------+" , ConsoleColor.DarkMagenta);
         }
+
+        public static void AdminMenu()
+        {
+            Console.WriteLine();
+            //Console.SetCursorPosition(5,Console.CursorTop);
+            Console.WriteLine("                                  +---------------------------------------------------+");
+            Console.WriteLine("                                  |                                                   |");
+            Console.WriteLine("                                  |               1.  Create an Account               |");
+            Console.WriteLine("                                  |               2.  Update an Account               |");
+            Console.WriteLine("                                  |               3.  View All Accounts               |");
+            Console.WriteLine("                                  |               4.  LogOut                          |");
+            Console.WriteLine("                                  |                                                   |");
+            Console.WriteLine("                                  +---------------------------------------------------+");
+            Console.WriteLine();
+            Message("+----------------------------+" , ConsoleColor.DarkMagenta);
+            Message("|Choose an Operation:  (1-4):|" , ConsoleColor.DarkMagenta);
+            Message("+----------------------------+" , ConsoleColor.DarkMagenta);
+
+            }
     }
 }
