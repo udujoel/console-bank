@@ -36,7 +36,7 @@ namespace console_bank
 
         public static void Register()
         {
-            Account userAccount = new Account();
+           // Account userAccount = new Account();
             var formatString = "+------------------------------------------+";
 
             Console.Clear();
